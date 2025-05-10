@@ -17,7 +17,7 @@ export default function EmailCalendarManagement() {
 
           <div className="mb-8">
             <Image
-              src="/april-2022-appointments.png"
+              src="/email.png"
               alt="Calendar showing April 2022"
               width={800}
               height={400}

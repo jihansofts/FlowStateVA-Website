@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,26 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
   }, []);
 
   return (
@@ -36,27 +57,54 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-[#0F2048] font-medium border-b-2 border-[#0F2048]">
+              className={`font-medium ${
+                activeSection === "home"
+                  ? "text-[#0F2048] border-b-2 border-[#0F2048]"
+                  : "text-[#1E1E1E] hover:text-[#0F2048]"
+              }`}>
               Home
             </Link>
             <a
               href="#why-choose-me"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]">
+              className={`text-[#1E1E1E] font-medium hover:text-[#0F2048] ${
+                activeSection === "why-choose-me"
+                  ? "border-b-2 border-[#0F2048] text-[#0F2048]"
+                  : ""
+              }`}
+              onClick={() => setMenuOpen(false)}>
               Why Choose Me
             </a>
+
             <a
               href="#services"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]">
+              className={`text-[#1E1E1E] font-medium hover:text-[#0F2048] ${
+                activeSection === "services"
+                  ? "border-b-2 border-[#0F2048] text-[#0F2048]"
+                  : ""
+              }`}
+              onClick={() => setMenuOpen(false)}>
               Services
             </a>
+
             <a
               href="#packages"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]">
+              className={`text-[#1E1E1E] font-medium hover:text-[#0F2048] ${
+                activeSection === "packages"
+                  ? "border-b-2 border-[#0F2048] text-[#0F2048]"
+                  : ""
+              }`}
+              onClick={() => setMenuOpen(false)}>
               Packages
             </a>
+
             <a
               href="#testimonials"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]">
+              className={`text-[#1E1E1E] font-medium hover:text-[#0F2048] ${
+                activeSection === "testimonials"
+                  ? "border-b-2 border-[#0F2048] text-[#0F2048]"
+                  : ""
+              }`}
+              onClick={() => setMenuOpen(false)}>
               Testimonials
             </a>
           </div>
@@ -83,31 +131,51 @@ export default function Navbar() {
           <div className="md:hidden mt-4 flex flex-col space-y-4">
             <Link
               href="/"
-              className="text-[#0F2048] font-medium border-b-2 border-[#0F2048]"
+              className={`font-medium ${
+                activeSection === "home"
+                  ? "text-[#0F2048] border-b-2 border-[#0F2048]"
+                  : "text-[#1E1E1E] hover:text-[#0F2048]"
+              }`}
               onClick={() => setMenuOpen(false)}>
               Home
             </Link>
             <a
               href="#why-choose-me"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]"
+              className={`font-medium ${
+                activeSection === "why-choose-me"
+                  ? "text-[#0F2048] border-b-2 border-[#0F2048]"
+                  : "text-[#1E1E1E] hover:text-[#0F2048]"
+              }`}
               onClick={() => setMenuOpen(false)}>
               Why Choose Me
             </a>
             <a
               href="#services"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]"
+              className={`font-medium ${
+                activeSection === "services"
+                  ? "text-[#0F2048] border-b-2 border-[#0F2048]"
+                  : "text-[#1E1E1E] hover:text-[#0F2048]"
+              }`}
               onClick={() => setMenuOpen(false)}>
               Services
             </a>
             <a
               href="#packages"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]"
+              className={`font-medium ${
+                activeSection === "packages"
+                  ? "text-[#0F2048] border-b-2 border-[#0F2048]"
+                  : "text-[#1E1E1E] hover:text-[#0F2048]"
+              }`}
               onClick={() => setMenuOpen(false)}>
               Packages
             </a>
             <a
               href="#testimonials"
-              className="text-[#1E1E1E] font-medium hover:text-[#0F2048]"
+              className={`font-medium ${
+                activeSection === "testimonials"
+                  ? "text-[#0F2048] border-b-2 border-[#0F2048]"
+                  : "text-[#1E1E1E] hover:text-[#0F2048]"
+              }`}
               onClick={() => setMenuOpen(false)}>
               Testimonials
             </a>
