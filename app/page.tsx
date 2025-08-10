@@ -3,8 +3,8 @@ import Hero from "@/components/Hero";
 import WhyChoose from "@/components/WhyChoose";
 import Services from "@/components/Services";
 import Packges from "@/components/Packges";
-import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
       <Packges />
 
       {/* Testimonials Section */}
-      <Testimonials />
+      <Portfolio />
 
       {/* Footer */}
       <Footer />

@@ -164,11 +164,13 @@ export default function Packages() {
 
       {/* Optional Button */}
       <div className="text-center mt-10">
-        <Button
-          variant="outline"
-          className="bg-[#FFD1D1] text-[16px] h-14 w-[220px] font-bold text-[#0F2048]">
-          Book a Consultation
-        </Button>
+        <a target="_blank" href="https://calendly.com/flowstate-va">
+          <Button
+            variant="outline"
+            className="bg-[#FFD1D1] text-[16px] h-14 w-[220px] font-bold text-[#0F2048]">
+            Book a Consultation
+          </Button>
+        </a>
       </div>
     </section>
   );

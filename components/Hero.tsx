@@ -23,15 +23,18 @@ export default function Hero() {
               always down to help you keep things running smoothly.
             </p>
             <div className="flex flex-col mt-10 sm:flex-row gap-4">
-              <Button className="bg-[#ffb6b6] lg:w-32 md:w-32 sm:w-full w-full h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium">
-                Call
-              </Button>
-              <Button
-                variant="outline"
-                className="border-[#1E1E1E] h-14 text-[#1E1E1E]">
-                {/* Book a Consultation */}
-                Calendly
-              </Button>
+              <a target="_blank" href="https://calendly.com/flowstate-va">
+                <Button className="bg-[#ffb6b6] lg:w-32 md:w-32 sm:w-full w-full h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium">
+                  Get Started
+                </Button>
+              </a>
+              <a target="_blank" href="https://calendly.com/flowstate-va">
+                <Button
+                  variant="outline"
+                  className="border-[#1E1E1E] h-14 text-[#1E1E1E]">
+                  Book a Consultation
+                </Button>
+              </a>
             </div>
           </div>
           <div className="md:w-1/2 relative">

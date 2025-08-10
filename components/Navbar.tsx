@@ -120,10 +120,11 @@ export default function Navbar() {
 
           {/* CTA Button (Always visible) */}
           <div className="hidden md:block">
-            <Button className="bg-[#ffb6b6] py-5 h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium">
-              {/* Get Started */}
-              Call
-            </Button>
+            <a target="_blank" href="https://calendly.com/flowstate-va">
+              <Button className="bg-[#ffb6b6] py-5 h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium">
+                Get Started
+              </Button>
+            </a>
           </div>
         </nav>
 
@@ -180,12 +181,13 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}>
               Testimonials
             </a>
-            <Button
-              className="bg-[#ffb6b6] py-5 h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium w-full"
-              onClick={() => setMenuOpen(false)}>
-              {/* Get Started */}
-              Call
-            </Button>
+            <a href="https://calendly.com/flowstate-va">
+              <Button
+                className="bg-[#ffb6b6] py-5 h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium w-full"
+                onClick={() => setMenuOpen(false)}>
+                Get Started
+              </Button>
+            </a>
           </div>
         )}
       </div>
