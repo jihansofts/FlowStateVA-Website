@@ -13,23 +13,24 @@ export default function Hero() {
               Helping You Breathe Easier in Your Business
             </h2>
             <p className="text-[#5A5A5A] mt-5 text-[16px] font-normal">
-              Hi there, I'm Danielle — a virtual assistant who is excellent at
+              Hi there, I’m Daniela — a virtual assistant who is excellent at
               supporting small business owners, creatives, and entrepreneurs as
-              they work to stay on top of things without the stress. I'm here to
+              they work to stay on top of things without the stress. I’m here to
               take care of the behind-the-scenes tasks like emails, scheduling,
               client follow-ups, content organization, digital marketing
-              analytics and more, so you can focus on what you do best. I'm
-              detail-oriented, tech-savvy, easy to communicate with, and always
-              driven to help you keep things running smoothly.
+              analytics and more, so you can focus on what you actually want to
+              be doing. I’m organized, reliable, easy to communicate with, and
+              always down to help you keep things running smoothly.
             </p>
             <div className="flex flex-col mt-10 sm:flex-row gap-4">
               <Button className="bg-[#ffb6b6] lg:w-32 md:w-32 sm:w-full w-full h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium">
-                Get Started
+                Call
               </Button>
               <Button
                 variant="outline"
                 className="border-[#1E1E1E] h-14 text-[#1E1E1E]">
-                Book a Consultation
+                {/* Book a Consultation */}
+                Calendly
               </Button>
             </div>
           </div>

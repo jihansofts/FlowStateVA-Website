@@ -121,7 +121,8 @@ export default function Navbar() {
           {/* CTA Button (Always visible) */}
           <div className="hidden md:block">
             <Button className="bg-[#ffb6b6] py-5 h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium">
-              Get Started
+              {/* Get Started */}
+              Call
             </Button>
           </div>
         </nav>
@@ -182,7 +183,8 @@ export default function Navbar() {
             <Button
               className="bg-[#ffb6b6] py-5 h-14 hover:bg-[#ff9e9e] text-[#1E1E1E] font-medium w-full"
               onClick={() => setMenuOpen(false)}>
-              Get Started
+              {/* Get Started */}
+              Call
             </Button>
           </div>
         )}
