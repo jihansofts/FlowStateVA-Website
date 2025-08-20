@@ -20,22 +20,23 @@ export default function Packages() {
           <div className="bg-white border border-[#093A3E52] lg:h-[500px] md:h-[500px] sm:h-auto h-auto px-12  rounded-2xl p-6  flex flex-col justify-between">
             <div>
               <h3 className="text-[24px] font-bold text-center text-[#1E1E1E] mb-2">
-                Basic
+                Premium
               </h3>
               <h1 className="text-[50px] font-bold text-center text-[#1E1E1E] mb-1">
-                $300
+                $1000
               </h1>
               <p className="text-center text-[#1E1E1E] mb-4 text-[24px] font-medium">
-                10 Hours/Month
+                40 Hours/Month
               </p>
               <p className="text-[16px] text-[#1E1E1E] text-center">
-                Perfect for busy entrepreneurs who need a little extra support
-                without a full-time commitment. This package gives you 10
-                flexible hours a month to delegate tasks like email and calendar
-                management, social media scheduling, light customer service,
-                simple research, and other admin work. I’ll help you stay
-                organized, save time, and keep things moving—so you can focus on
-                growing your business.
+                For the established entrepreneur or CEO ready to reclaim their
+                time and focus on visionary growth. This all-inclusive package
+                integrates a true partner into your operations. With 40 hours of
+                dedicated monthly support, I’ll proactively manage entire
+                workflows, from complex project management and team coordination
+                to system optimization and strategic planning. Consider your
+                operational heavy lifting handled, giving you the freedom to
+                lead and scale your business with confidence.
               </p>
             </div>
           </div>
@@ -47,7 +48,7 @@ export default function Packages() {
             </div>
             <div>
               <h3 className="text-[24px] font-bold text-center text-[#ffffff] mb-2">
-                Premium
+                Standard
               </h3>
               <p className="text-[50px] font-bold text-center text-[#ffffff] mb-1">
                 $550
@@ -56,9 +57,9 @@ export default function Packages() {
                 20 Hours/Month
               </p>
               <p className="text-[16px] text-[#ffffff] text-center">
-                Designed for entrepreneurs and small teams ready to level up.
-                With 20 hours of support each month, you’ll get a powerful mix
-                of three general services—like inbox and calendar management,
+                Designed for companies and small teams ready to level up. With
+                20 hours of support each month, you’ll get a powerful mix of
+                three general services—like inbox and calendar management,
                 social media scheduling, and client follow-ups—plus one
                 specialized service tailored to your needs, such as paid ad
                 management, systems setup, or light design work. It’s the
@@ -149,7 +150,7 @@ export default function Packages() {
           </h3>
           <ul className="space-y-3">
             <li className="flex items-start gap-2">
-              <div className="h-5 w-5 rounded-full border border-gray-400 mt-0.5 mr-2"></div>
+              <div className="h-5 w-5 rounded-full border border-gray-400 mt-0.5 mr-1.5"></div>
               <span>Rush delivery: +25% of project cost</span>
             </li>
             <li className="flex items-start gap-2">
