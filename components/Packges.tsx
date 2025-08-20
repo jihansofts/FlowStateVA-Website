@@ -103,7 +103,7 @@ export default function Packages() {
             Hourly Pricing
           </h3>
           <ul className="space-y-3">
-            <p className="text-center text-[16px] text-[#1E1E1E]">Exmaple:</p>
+            <p className="text-center text-[16px] text-[#1E1E1E]">Example:</p>
             <li className="flex items-start">
               <div className="h-5 w-5 rounded-full border border-gray-400 mt-0.5 mr-2"></div>
               <span className="text-[16px] text-[#1E1E1E]">
@@ -126,7 +126,7 @@ export default function Packages() {
             Project-Based Pricing
           </h3>
           <ul className="space-y-3">
-            <p className="text-center text-[16px] text-[#1E1E1E]">Exmaple:</p>
+            <p className="text-center text-[16px] text-[#1E1E1E]">Example:</p>
             <li className="flex items-start gap-2">
               <div className="min-w-[20px] h-5 w-5 rounded-full border border-gray-400 mt-1"></div>
               <span className=" text-[16px] text-[#1E1E1E]">
@@ -150,7 +150,7 @@ export default function Packages() {
           </h3>
           <ul className="space-y-3">
             <li className="flex items-start gap-2">
-              <div className="h-5 w-5 rounded-full border border-gray-400 mt-0.5 mr-1.5"></div>
+              <div className="h-5 w-5 rounded-full border border-gray-400 mt-0.5 mr-1"></div>
               <span>Rush delivery: +25% of project cost</span>
             </li>
             <li className="flex items-start gap-2">
