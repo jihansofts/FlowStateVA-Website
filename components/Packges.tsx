@@ -17,26 +17,25 @@ export default function Packages() {
         <div className="absolute inset-0  bg-[#ffb6b6]  h-[400px] z-[-1] w-full rounded-3xl"></div>
         <div className="grid grid-cols-1 justify-end items-end md:grid-cols-3 pt-10 gap-6">
           {/* Basic Package */}
-          <div className="bg-white border border-[#093A3E52] lg:h-[500px] md:h-[500px] sm:h-auto h-auto px-12  rounded-2xl p-6  flex flex-col justify-between">
+          <div className="bg-white border border-[#093A3E52] lg:h-[500px] md:h-[500px] sm:h-auto h-auto px-12 rounded-2xl p-6 shadow-md flex flex-col justify-between">
             <div>
               <h3 className="text-[24px] font-bold text-center text-[#1E1E1E] mb-2">
-                Premium
+                Basic
               </h3>
               <h1 className="text-[50px] font-bold text-center text-[#1E1E1E] mb-1">
-                $1000
+                $300
               </h1>
               <p className="text-center text-[#1E1E1E] mb-4 text-[24px] font-medium">
-                40 Hours/Month
+                10 Hours/Month
               </p>
               <p className="text-[16px] text-[#1E1E1E] text-center">
-                For the established entrepreneur or CEO ready to reclaim their
-                time and focus on visionary growth. This all-inclusive package
-                integrates a true partner into your operations. With 40 hours of
-                dedicated monthly support, I’ll proactively manage entire
-                workflows, from complex project management and team coordination
-                to system optimization and strategic planning. Consider your
-                operational heavy lifting handled, giving you the freedom to
-                lead and scale your business with confidence.
+                Perfect for busy entrepreneurs who need a little extra support
+                without a full-time commitment. This package gives you 10
+                flexible hours a month to delegate tasks like email and calendar
+                management, social media scheduling, light customer service,
+                simple research, and other admin work. I’ll help you stay
+                organized, save time, and keep things moving—so you can focus on
+                growing your business.
               </p>
             </div>
           </div>
@@ -70,25 +69,26 @@ export default function Packages() {
           </div>
 
           {/* Enterprise Package */}
-          <div className="bg-white border border-[#093A3E52] lg:h-[500px] md:h-[500px] sm:h-auto h-auto px-12 rounded-2xl p-6 shadow-md flex flex-col justify-between">
+          <div className="bg-white border border-[#093A3E52] lg:h-[500px] md:h-[500px] sm:h-auto h-auto px-12  rounded-2xl p-6  flex flex-col justify-between">
             <div>
               <h3 className="text-[24px] font-bold text-center text-[#1E1E1E] mb-2">
-                Basic
+                Premium
               </h3>
               <h1 className="text-[50px] font-bold text-center text-[#1E1E1E] mb-1">
-                $300
+                $1000
               </h1>
               <p className="text-center text-[#1E1E1E] mb-4 text-[24px] font-medium">
-                10 Hours/Month
+                40 Hours/Month
               </p>
               <p className="text-[16px] text-[#1E1E1E] text-center">
-                Perfect for busy entrepreneurs who need a little extra support
-                without a full-time commitment. This package gives you 10
-                flexible hours a month to delegate tasks like email and calendar
-                management, social media scheduling, light customer service,
-                simple research, and other admin work. I’ll help you stay
-                organized, save time, and keep things moving—so you can focus on
-                growing your business.
+                For the established entrepreneur or CEO ready to reclaim their
+                time and focus on visionary growth. This all-inclusive package
+                integrates a true partner into your operations. With 40 hours of
+                dedicated monthly support, I’ll proactively manage entire
+                workflows, from complex project management and team coordination
+                to system optimization and strategic planning. Consider your
+                operational heavy lifting handled, giving you the freedom to
+                lead and scale your business with confidence.
               </p>
             </div>
           </div>
