@@ -17,7 +17,7 @@ export default function Packages() {
         <div className="absolute inset-0  bg-[#ffb6b6]  h-[400px] z-[-1] w-full rounded-3xl"></div>
         <div className="grid grid-cols-1 justify-end items-end md:grid-cols-3 pt-10 gap-6">
           {/* Basic Package */}
-          <div className="bg-white border border-[#093A3E52] lg:h-[500px] md:h-[500px] sm:h-auto h-auto px-12 rounded-2xl p-6 shadow-md flex flex-col justify-between">
+          <div className="bg-white border border-[#093A3E52] lg:h-[550px] md:h-[500px] sm:h-auto h-auto px-12 rounded-2xl p-6 shadow-md flex flex-col justify-between">
             <div>
               <h3 className="text-[24px] font-bold text-center text-[#1E1E1E] mb-2">
                 Basic
@@ -69,7 +69,7 @@ export default function Packages() {
           </div>
 
           {/* Enterprise Package */}
-          <div className="bg-white border border-[#093A3E52] lg:h-[500px] md:h-[500px] sm:h-auto h-auto px-12  rounded-2xl p-6  flex flex-col justify-between">
+          <div className="bg-white border border-[#093A3E52] lg:h-[550px] md:h-[500px] sm:h-auto h-auto px-12  rounded-2xl p-6  flex flex-col justify-between">
             <div>
               <h3 className="text-[24px] font-bold text-center text-[#1E1E1E] mb-2">
                 Premium
